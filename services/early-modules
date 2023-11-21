@@ -1,0 +1,4 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/early-modules
+depends-on = early-pre.target
+

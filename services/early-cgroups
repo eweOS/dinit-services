@@ -1,0 +1,5 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/early-cgroups
+depends-on = early-detect
+depends-on = early-mount
+

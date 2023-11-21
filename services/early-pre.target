@@ -1,0 +1,4 @@
+type       = internal
+depends-on = early-detect
+depends-on = early-mount
+depends-on = early-cgroups

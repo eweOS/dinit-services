@@ -1,0 +1,4 @@
+type       = internal
+waits-for = early-rootrw
+waits-for = early-fstab
+depends-on = early-devices.target

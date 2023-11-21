@@ -1,0 +1,6 @@
+type       = internal
+depends-on = catnest
+depends-on = pawprint
+depends-on = syslogd
+depends-on = utmpd
+depends-on = wtmpd

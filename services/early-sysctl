@@ -1,0 +1,4 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/early-sysctl
+depends-on = early-devices.target
+depends-on = early-fs.target

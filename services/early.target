@@ -1,0 +1,7 @@
+type       = internal
+depends-on = early-console.target
+depends-on = early-net
+depends-on = early-hostname
+waits-for = early-sysutils
+depends-on = early-fs.target
+waits-for = early-sysctl

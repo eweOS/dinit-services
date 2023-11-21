@@ -1,0 +1,4 @@
+type     = process
+command  = /sbin/getty -i -n -l /sbin/sulogin /dev/ttyS0 115200
+restart  = false
+options  = runs-on-console
