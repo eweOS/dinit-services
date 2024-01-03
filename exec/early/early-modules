@@ -5,6 +5,9 @@ MODULES=/etc/modules
 # Check that the kernel has module support.
 [ -e /proc/ksyms -o -e /proc/modules ] || exit 0
 
+# probe coldplugged modules
+find /sys -name 'modalias' -type f -exec cat '{}' + | sort -u | xargs modprobe -b -a 2>/dev/null
+
 # Exit if there's no modules file or there are no valid entries
 [ -r ${MODULES} ] && egrep -qv '^($|#)' ${MODULES} || exit 0
 
