@@ -1,4 +1,4 @@
 type     = process
-command  = /usr/lib/dinit/exec/early/recovery
+command  = /usr/lib/dinit/exec/early/sulogin
 restart  = false
 options  = runs-on-console

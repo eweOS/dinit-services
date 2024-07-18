@@ -1,5 +1,5 @@
 type     = process
-command  = /sbin/getty -i -n -l /sbin/sulogin /dev/ttyS0 115200
+command  = /usr/lib/dinit/exec/early/sulogin
 restart  = false
 options  = shares-console
 chain-to = boot
