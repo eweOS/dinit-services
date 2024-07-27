@@ -1,5 +1,4 @@
 type       = internal
-depends-on = early-console.target
 depends-on = early-net
 depends-on = early-hostname
 depends-on = early-fs.target
