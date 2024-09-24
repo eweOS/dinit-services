@@ -2,4 +2,4 @@ type       = internal
 depends-on = early-net
 depends-on = early-hostname
 depends-on = early-fs.target
-waits-for.d = /usr/lib/dinit/system/early.d
+waits-for.d = /usr/lib/dinit.d/early.d
