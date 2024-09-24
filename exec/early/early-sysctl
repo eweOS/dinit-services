@@ -1,3 +1,3 @@
 #!/bin/env sh
 
-
+sysctl -enq -p /etc/sysctl.conf
