@@ -18,8 +18,8 @@ mkdir -p /run/lock /run/udev
 
 # "hidepid=1" doesn't appear to take effect on first mount of /proc,
 # so we mount it and then remount:
-mountpoint -q /proc || mount -n -t proc -o hidepid=1 proc /proc
-mount -n -t proc -o remount,hidepid=1 proc /proc
+mountpoint -q /proc || mount -n -t proc -o hidepid=1,gid=30 proc /proc
+mount -n -t proc -o remount,hidepid=1,gid=30 proc /proc
 
 if [ -d /sys/kernel/security ]; then
   mount -n -t securityfs securityfs /sys/kernel/security || :
