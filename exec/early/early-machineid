@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -f /etc/machine-id ]; then
+    if command -v dbus-uuidgen > /dev/null 2>&1; then
+        dbus-uuidgen > /etc/machine-id
+    else
+        od -An -N16 -tx /dev/urandom | tr -d ' ' > /etc/machine-id
+    fi
+fi
