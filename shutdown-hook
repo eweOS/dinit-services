@@ -3,7 +3,6 @@
 find /usr/lib/dinit/exec/shutdown -type f -executable -exec {} \& \;
 
 umount -l -a -t nfs,nfs4,smbfs,cifs
-umount -l -a -O netdev
 
 /usr/lib/dinit/exec/early/early-fstab stop
 

@@ -1,0 +1,17 @@
+#!/bin/env sh
+
+CONSOLE_TTY=$(cat /sys/class/tty/console/active)
+
+case "$1" in
+    start)
+        if [ "$CONSOLE_TTY" != "tty0" ] && [ -f "$CONSOLE_TTY" ]; then
+            dinitctl -p $DINIT_CS_FD start getty@$CONSOLE_TTY
+        fi
+        ;;
+    stop)
+        if [ "$CONSOLE_TTY" != "tty0" ] && [ -f "$CONSOLE_TTY" ]; then
+            dinitctl -p $DINIT_CS_FD stop getty@$CONSOLE_TTY
+        fi
+        ;;
+     *) exit 1 ;;
+esac

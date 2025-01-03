@@ -1,0 +1,7 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/early-console.sh start
+stop-command = /usr/lib/dinit/exec/early/early-console.sh stop
+depends-on = early-devices.target
+depends-on = early-fs.target
+options    = pass-cs-fd
+
