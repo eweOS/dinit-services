@@ -1,4 +1,4 @@
 type       = internal
-depends-on = early-detect
-depends-on = early-mount
+depends-on = early-env
+depends-on = early-pseudofs
 depends-on = early-cgroups

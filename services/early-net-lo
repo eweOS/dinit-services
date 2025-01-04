@@ -1,3 +1,3 @@
 type       = scripted
-command    = /usr/lib/dinit/exec/early/early-net
+command    = /usr/lib/dinit/exec/early/net-lo
 depends-on = early-devices.target

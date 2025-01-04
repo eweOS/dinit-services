@@ -1,6 +1,0 @@
-type         = scripted
-command      = ./early/scripts/clock.sh hwclock start
-stop-command = ./early/scripts/clock.sh hwclock stop
-depends-on   = mdev
-depends-on   = early-pre.target
-depends-on   = early-rootrw.target

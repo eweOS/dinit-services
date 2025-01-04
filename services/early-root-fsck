@@ -1,0 +1,7 @@
+type          = scripted
+command       = /usr/lib/dinit/exec/early/root-fsck
+start-timeout = 0
+depends-on    = early-pre.target
+depends-ms    = early-devices.target
+restart       = false
+options       = starts-on-console pass-cs-fd start-interruptible skippable

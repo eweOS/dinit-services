@@ -1,4 +1,3 @@
 type       = internal
-waits-for = early-rootrw
-waits-for = early-fstab
-depends-on = early-devices.target
+depends-on = early-fs-pre.target
+waits-for.d = /usr/lib/dinit.d/early-fs.waits-for.d
