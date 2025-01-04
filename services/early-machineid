@@ -1,3 +1,0 @@
-type       = scripted
-command    = /usr/lib/dinit/exec/early/early-machineid
-waits-for  = early-rootrw

@@ -1,4 +1,4 @@
 type       = scripted
 command    = /usr/lib/dinit/exec/early/set-rootrw
-depends-on    = early-pre.target
+depends-ms   = early-root-fsck
 options    = starts-rwfs

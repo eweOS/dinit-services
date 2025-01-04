@@ -1,2 +1,0 @@
-type     = scripted
-command  = /usr/lib/dinit/exec/early/early-detect

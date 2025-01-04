@@ -1,2 +1,2 @@
 type        = internal
-depends-on  = rc.target
+depends-on  = pre-network.target

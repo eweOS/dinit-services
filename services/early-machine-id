@@ -1,0 +1,3 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/machine-id
+waits-for  = early-root-rw.target

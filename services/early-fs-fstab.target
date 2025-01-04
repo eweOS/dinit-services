@@ -1,0 +1,4 @@
+type       = scripted
+command    = /usr/lib/dinit/exec/early/fs-fstab start
+depends-on = early-devices.target
+waits-for  = early-root-rw.target
