@@ -1,3 +1,5 @@
 #!/bin/env sh
 
-/bin/mount -n -o remount,rw /
+/bin/mount -n -o remount,rw / || true
+
+[ -w / ]
