@@ -1,5 +1,5 @@
 type     = process
 command  = /usr/lib/dinit/exec/early/sulogin
 restart  = false
-options  = shares-console
+options:   shares-console
 chain-to = boot

@@ -1,2 +1,2 @@
 type       = internal
-depends-on = early-devices.target
+depends-on:  early-devices.target
