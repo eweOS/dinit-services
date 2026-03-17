@@ -1,2 +1,2 @@
 type = internal
-waits-for.d = boot.d
+waits-for.d: boot.d

@@ -1,2 +1,2 @@
 type       = internal
-depends-ms = early-modules
+depends-ms:  early-modules

@@ -1,4 +1,4 @@
 type       = internal
-depends-on = early-env
-depends-on = early-pseudofs
-depends-on = early-cgroups
+depends-on:  early-env
+depends-on:  early-pseudofs
+depends-on:  early-cgroups

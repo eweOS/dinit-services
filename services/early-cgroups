@@ -1,5 +1,5 @@
 type       = scripted
 command    = /usr/lib/dinit/exec/early/cgroups
-depends-on = early-env
-depends-on = early-pseudofs
+depends-on:  early-env
+depends-on:  early-pseudofs
 

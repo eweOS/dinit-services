@@ -1,3 +1,3 @@
 type       = internal
-depends-on = early-fs-pre.target
-waits-for.d = /usr/lib/dinit.d/early-fs.waits-for.d
+depends-on:  early-fs-pre.target
+waits-for.d: /usr/lib/dinit.d/early-fs.waits-for.d

@@ -1,2 +1,2 @@
 type       = internal
-depends-on = mdev
+depends-on:  mdev
